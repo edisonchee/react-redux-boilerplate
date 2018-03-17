@@ -1,0 +1,8 @@
+# Dependency directories
+node_modules/
+
+# OS stuff
+.DS_Store
+
+# Build files
+dist/
