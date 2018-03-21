@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { hot } from 'react-hot-loader';
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'react-router-redux';
 
@@ -22,3 +23,5 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('root')
 );
+
+export default hot(module)(App);

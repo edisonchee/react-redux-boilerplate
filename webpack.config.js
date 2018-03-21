@@ -14,7 +14,14 @@ module.exports = {
   },
   module: {
     rules: [
-      { test: /\.js$/, use: 'babel-loader', exclude: /node_modules/ },
+      { 
+        test: /\.js$/,
+        loader: 'babel-loader',
+        options: {
+          cacheDirectory: true,
+          plugins: ['react-hot-loader/babel'],
+        },
+        exclude: /node_modules/ },
     ]
   },
   devServer: {
