@@ -29,7 +29,7 @@ module.exports = {
     port: 9000,
     hot: true,
   },
-  devtool: 'source-map',
+  devtool: 'eval',
   plugins: [
     new HtmlWebpackPlugin({
       title: "React Boilerplate",
