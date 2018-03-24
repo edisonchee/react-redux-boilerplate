@@ -5,15 +5,7 @@ import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'react-router-redux';
 
 import { store, history } from './store';
-import Nav from './components/Nav';
-import Routes from './routes';
-
-const App = () => (
-  <div>
-    <Nav />
-    <Routes />
-  </div>
-);
+import App from './components/App';
 
 ReactDOM.render(
   <Provider store={ store }>
@@ -23,5 +15,3 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('root')
 );
-
-export default hot(module)(App);
