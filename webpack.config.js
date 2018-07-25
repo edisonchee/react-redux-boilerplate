@@ -1,5 +1,4 @@
 const { resolve } = require('path');
-const webpack = require('webpack');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
@@ -32,7 +31,7 @@ module.exports = {
   devtool: 'eval',
   plugins: [
     new HtmlWebpackPlugin({
-      title: "React Boilerplate",
+      title: "React-Redux Boilerplate",
       template: resolve(__dirname, 'src/static/index.html'),
     }),
   ],
