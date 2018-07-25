@@ -7,6 +7,7 @@ const Home = ({ name, onChange }) => (
     <h1>Hello, { name }</h1>
     <input 
       type="text"
+      value={ name }
       onChange={(e) => { onChange(e.target.value) }}
     />
   </div>
