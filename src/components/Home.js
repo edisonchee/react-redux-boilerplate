@@ -1,7 +1,25 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { updateName } from '../actions';
 
-const Home = () => (
-  <h1>Home</h1>
+const Home = ({ name, onChange }) => (
+  <div>
+    <h1>Hello, { name }</h1>
+    <input 
+      type="text"
+      onChange={(e) => { onChange(e.target.value) }}
+    />
+  </div>
 );
 
-export default Home;
+const mapStateToProps = state => {
+  return {
+    name: state.name
+  }
+}
+
+const mapDispatchToProps = dispatch => ({
+  onChange: (value) => { dispatch(updateName(value)) }
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
