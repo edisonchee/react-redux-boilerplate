@@ -5,7 +5,7 @@
 Running on:
 * [React 16.6.3](https://github.com/facebook/react)
 * [React-router-dom 4.3.1](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)
-* [React-redux 5.1.1](https://github.com/reactjs/react-redux)
-* [Connected-react-router 5.0.1](https://github.com/supasate/connected-react-router)
+* [React-redux 6.0.0](https://github.com/reactjs/react-redux)
+* [Connected-react-router 6.0.0](https://github.com/supasate/connected-react-router)
 
 Barebones boilerplate to get up and running real quick.
