@@ -3,7 +3,7 @@
 # React-Redux Boilerplate
 
 Running on:
-* [React 16.6.3](https://github.com/facebook/react)
+* [React 16.7.0](https://github.com/facebook/react)
 * [React-router-dom 4.3.1](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)
 * [React-redux 6.0.0](https://github.com/reactjs/react-redux)
 * [Connected-react-router 6.0.0](https://github.com/supasate/connected-react-router)
