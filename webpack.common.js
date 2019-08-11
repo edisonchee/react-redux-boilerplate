@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   entry: [resolve(__dirname, 'src/index.js')],
   output: {
-    filename: 'bundle.js',
+    filename: '[name].[hash].js',
     path: resolve(__dirname, 'dist'),
     publicPath: '/',
   },
@@ -14,7 +14,7 @@ module.exports = {
   module: {
     rules: [
       { 
-        test: /\.js$/,
+        test: /\.js$/, 
         loader: 'babel-loader',
         options: {
           cacheDirectory: true,
@@ -23,17 +23,10 @@ module.exports = {
         exclude: /node_modules/ },
     ]
   },
-  devServer: {
-    host: '0.0.0.0',
-    port: 9000,
-    hot: true,
-    historyApiFallback: true
-  },
-  devtool: 'eval',
   plugins: [
     new HtmlWebpackPlugin({
       title: "React-Redux Boilerplate",
       template: resolve(__dirname, 'src/static/index.html'),
     }),
-  ],
-};
+  ]
+}
