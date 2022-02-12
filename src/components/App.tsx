@@ -1,14 +1,13 @@
 import React from 'react';
-import { hot } from 'react-hot-loader/root';
 
 import Nav from './Nav';
-import Routes from '../routes';
+import AppRoutes from '../routes';
 
 const App = () => (
-  <div>
+  <>
     <Nav />
-    <Routes />
-  </div>
+    <AppRoutes />
+  </>
 );
 
-export default hot(App);
+export default App;
